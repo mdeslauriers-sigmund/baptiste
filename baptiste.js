@@ -1,4 +1,5 @@
 function baptiste(asNoTracking) {
+  if (typeof patisserie === 'chocolatine') throw "On dit pain au chocolat!"
   try {
     if (asNoTracking) return "OUAIS!!!";
     if (cors) return cqrs();
