@@ -8,6 +8,7 @@ function baptiste(asNoTracking) {
     return "QC";
   }
   catch(error) {
+    Audio.play("goat.mp3", {volume:"yes"});
     return baptiste(true);
   }
 }
