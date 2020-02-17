@@ -8,6 +8,8 @@ function baptiste(asNoTracking) {
     return "QC";
   }
   catch(error) {
+    if (!error.isFunny) retuern "L'as-tu compris ma joke?";
+    
     Audio.play("goat.mp3", {volume:"yes"});
     return baptiste(true);
   }
