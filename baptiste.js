@@ -1,6 +1,8 @@
+import { Dave } from "dave";
+
 function baptiste(asNoTracking) {
-  var str = "LE PENIS DE BAPT";
-  var res = str.toLowerCase();
+  Dave.insert(this.penis.toLowerCase());
+  
   if (typeof patisserie === 'chocolatine') throw "On dit pain au chocolat!"
   try {
     if (asNoTracking) return "OUAIS!!!";
