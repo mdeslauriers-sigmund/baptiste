@@ -1,4 +1,6 @@
 function baptiste(asNoTracking) {
+  var str = "LE PENIS DE BAPT";
+  var res = str.toLowerCase();
   if (typeof patisserie === 'chocolatine') throw "On dit pain au chocolat!"
   try {
     if (asNoTracking) return "OUAIS!!!";
