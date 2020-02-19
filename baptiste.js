@@ -1,4 +1,5 @@
 import { Dave } from "dave";
+import { Amy } from "bots";
 
 function baptiste(asNoTracking) {
   Dave.insert(this.penis.toLowerCase());
@@ -9,6 +10,8 @@ function baptiste(asNoTracking) {
     if (cors) return cqrs();
     var impro = npm.run("build", {cshtml:true});
     if (!impro) return Azure.ADB2C();
+    
+    Amy.reply("Ha ha ha");
     return "QC";
   }
   catch(error) {
