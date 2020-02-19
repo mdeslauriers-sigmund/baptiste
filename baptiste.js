@@ -2,6 +2,7 @@ import { Dave } from "dave";
 import { Amy } from "bots";
 import { CruiseBoatFactory, Orca } from "marine";
 import { Network, NetworkStatus } from "network";
+import { SteamCatalog } from "steam";
 
 function baptiste(asNoTracking) {
   if (Network.status === NetworkStatus.offline) {
@@ -19,6 +20,18 @@ function baptiste(asNoTracking) {
   }
 
   Dave.insert(this.penis.toLowerCase());
+  
+  SteamCatalog.on("game_added", game => {
+    if (game.isReleased) return; // Not interested in released games
+    if (game.price < 10) return; // Not expensive enough, better find it on another store
+    
+    if (game.studio.origin === "Sweden" || game.studio.type === "indy") {
+      game.preorder();
+    }
+    else {
+      game.preorder(); // Pre-order anyway, just to be safe.
+    }
+  });
 
   if (typeof patisserie === "chocolatine") throw "On dit pain au chocolat!";
   try {
